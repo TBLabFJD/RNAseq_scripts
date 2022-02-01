@@ -30,7 +30,7 @@ sampleNames <- sub(".counts.qualityUniqueStranded.txt","",sampleFiles)
 
 
 # Create a dictionary to transform the ENSMBL ID to Gene SYMBOL
-genedictionary <-read.delim(paste0(count_path, sampleFiles[1]), stringsAsFactors = F, row.names = 1, header = F)[,2, drop=FALSE]
+genedictionary <-read.delim(paste0(count_path, sampleFiles[1]), stringsAsFactors = F, row.names = 1, header = F)[,"V2", drop=FALSE]
 
 
 
